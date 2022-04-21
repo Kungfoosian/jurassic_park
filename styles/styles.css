@@ -1,8 +1,50 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     /* color: red; */
+    /* border: 1px solid red; */
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-image: url("../assets/images/african_animals.jpg");
+    width: 100%;
+    background-image: url("../assets/images/dino_tracks.jpg");
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5rem 0;
 }
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.links {
+    display: inline-block;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                 1px 1px 0 #000;
+
+    margin: 0 1rem;
+}
+
+/* header .top, header .bottom {
+    margin-bottom: 0.5rem;
+} */
