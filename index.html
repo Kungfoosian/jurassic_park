@@ -11,24 +11,44 @@
 
 <body>
     <header>
-        <div class="top">
-            <a class="links" href="plan-visit.html">Plan Your<br>Visit</a>
-            
-            <a class="links" href="about.html">About<br>Us</a>
-            
-            <a class="links" href="index.html">
-                <img class="logo" src="assets/images/logo.png" alt="logo">
-            </a>
+        <a class="links" href="index.html">
+            <img class="logo" src="assets/images/logo.png" alt="logo">
+        </a>
 
-            <a class="links" href="explore-zoo.html">Explore<br>Zoo</a>
+        <nav>
+            <ul>
+                <!-- <div class="top"> -->
+                    <li>
+                        <a class="links" href="plan-visit.html">Plan Your<br>Visit</a>
+                    </li>
+                    <li>
+                        <a class="links" href="about.html">About<br>Us</a>
+                    </li>
+                    <li>
+                        <a class="links" href="explore-zoo.html">Explore<br>Zoo</a>
+                    </li>
+                    <li>
+                        <a class="links" href="save-wildlife.html">Save<br>Wildlife</a>
+                    </li>
+                    <li>
+                        <a class="links" href="book-ticket.html">Reserve Your<br>Spot!</a>
+                    </li>
+                <!-- </div> -->
+                
+                <!-- <div class="bottom"> -->
+                <!-- </div> -->
+            </ul>
             
-            <a class="links" href="save-wildlife.html">Save<br>Wildlife</a>
-            
-        </div>
-        
-        <div class="bottom">
-            <a class="links" href="book-ticket.html">Reserve Your<br>Spot!</a>
-        </div>
+            <select name="collapse-nav" id="collapse-nav">
+                <option value="" selected>Select</option>
+
+                <option value="plan-visit.html">Plan Your Visit</option>
+                <option value="about.html">About Us</option>
+                <option value="explore-zoo.html">Explore Zoo</option>
+                <option value="save-wildlife.html">Save Wildlife</option>
+                <option value="book-ticket.html">Reserve Your Spot!</option>
+            </select>
+        </nav>
     </header>
     
     <div id="hero">
