@@ -6,48 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic: The Park</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <header>
-        <a class="links" href="index.html">
+        <a href="index.html">
             <img class="logo" src="assets/images/logo.png" alt="logo">
         </a>
 
-        <nav>
-            <ul>
-                <!-- <div class="top"> -->
-                    <li>
-                        <a class="links" href="plan-visit.html">Plan Your<br>Visit</a>
-                    </li>
-                    <li>
-                        <a class="links" href="about.html">About<br>Us</a>
-                    </li>
-                    <li>
-                        <a class="links" href="explore-zoo.html">Explore<br>Zoo</a>
-                    </li>
-                    <li>
-                        <a class="links" href="save-wildlife.html">Save<br>Wildlife</a>
-                    </li>
-                    <li>
-                        <a class="links" href="book-ticket.html">Reserve Your<br>Spot!</a>
-                    </li>
-                <!-- </div> -->
-                
-                <!-- <div class="bottom"> -->
-                <!-- </div> -->
-            </ul>
-            
-            <select name="collapse-nav" id="collapse-nav">
-                <option value="" selected>Select</option>
+        <!-- Hamburger icon -->
+        <input type="checkbox" class="side-menu" id="side-menu">
+        <label class="hamburger" for="side-menu"> <span class="hamburger-line"></span> </label>
 
-                <option value="plan-visit.html">Plan Your Visit</option>
-                <option value="about.html">About Us</option>
-                <option value="explore-zoo.html">Explore Zoo</option>
-                <option value="save-wildlife.html">Save Wildlife</option>
-                <option value="book-ticket.html">Reserve Your Spot!</option>
-            </select>
+        <!-- https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/ -->
+        <nav class="topnav">
+            <ul class="menu">
+                    <li><a class="links" href="plan-visit.html">Plan Your <span class="line-break">Visit</span></a></li>
+                    <li><a class="links" href="about.html">About <span class="line-break">Us</span></a></li>
+                    <li><a class="links" href="explore-zoo.html">Explore <span class="line-break">Zoo</span></a></li>
+                    <li><a class="links" href="save-wildlife.html">Save <span class="line-break">Wildlife</span></a></li>
+                    <li><a class="links" href="book-ticket.html">Reserve Your <span class="line-break">Spot!</span></a></li>
+            </ul>
         </nav>
     </header>
     
