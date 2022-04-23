@@ -8,26 +8,33 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="scripts/nav.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" src="assets/images/logo-small.jpeg" alt="logo">
-        </a>
-
-        
-        <nav class="navigation">
-            <a class="links" href="plan-visit.html">Plan Your <span class="line-break">Visit</span></a>
-            <a class="links" href="about.html">About <span class="line-break">Us</span></a>
-            <a class="links" href="explore-zoo.html">Explore <span class="line-break">Zoo</span></a>
-            <a class="links" href="save-wildlife.html">Save <span class="line-break">Wildlife</span></a>
-            <a class="links" href="book-ticket.html">Reserve Your <span class="line-break">Spot!</span></a>
-
+        <div class="navTop">
+            
+            <a href="index.html">
+                <img class="logo" src="assets/images/logo-big.png" alt="logo">
+            </a>
+            
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="displayNav()">
                 <i class="fa fa-bars fa-2xl"></i>
             </a>
+        </div>
+        
+        <nav class="navigation">
+
+            <div id="myLinks">
+                <a class="links" href="plan-visit.html">Plan Your Visit</a>
+                <a class="links" href="about.html">About Us</a>
+                <a class="links" href="explore-zoo.html">Explore Zoo</a>
+                <a class="links" href="save-wildlife.html">Save Wildlife</a>
+                <a class="links" href="book-ticket.html">Reserve Your Spot!</a>
+            </div>
+
         </nav>
     </header>
     
