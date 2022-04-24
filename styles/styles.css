@@ -21,7 +21,9 @@ a { text-decoration: none; }
 
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(var(--creme), var(--darkcreme));
+    /* background-image: linear-gradient(var(--creme), var(--darkcreme)); */
+    background-image: url('../assets/images/background.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(161, 117, 31, 0.53);
 }
 
 
@@ -66,7 +68,7 @@ body {
     text-align: center;
     
     /* background-color: var(--tin); */
-    background-image: url("../assets/images/nav-bg3.png");
+    background-image: url("../assets/images/nav-bg1.png");
     
     border-bottom: 3px solid var(--white);
 
