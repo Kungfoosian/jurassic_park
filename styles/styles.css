@@ -5,6 +5,7 @@
     --lightgreen: #3cc47c;
     --darkgreen: #1e392a;
     --creme: #e9c893;
+    --darkcreme: #d4932b;
     --tin: #828081;
 }
 
@@ -19,26 +20,24 @@
 a { text-decoration: none; }
 
 body {
-    min-height: 100vh;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    /* background-image: linear-gradient( var(--darkgreen), var(--lightgreen)); */
-    background-color: var(--lightgreen);
+    background-image: linear-gradient(var(--creme), var(--darkcreme));
 }
 
 
 
-header {
-    /* position: sticky; */
-    /* top: 0; */
+.header {
     width: 100%;
 
     margin-bottom: 20px;
     
-    border-bottom: 3px solid var(--tin);
+    border-bottom: 3px solid var(--darkcreme);
+
+    position: sticky;
+    top: 0;
 }
 
 .navTop {
-    /* background-color: var(--creme); */
     background-image: linear-gradient(to right, var(--creme), #d4932b);
     display: flex;
     justify-content: space-around;
@@ -57,15 +56,26 @@ header {
 .navTop .icon { color: white; }
 
 .navigation {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
-.navigation #myLinks {
+.navigation {
     display: none;
-    text-align: center;
-    background-image: linear-gradient(to right, var(--creme), #d4932b);
 
+    text-align: center;
+    
+    /* background-color: var(--tin); */
+    background-image: url("../assets/images/nav-bg2.png");
+    
+    border-bottom: 3px solid var(--white);
+
+    box-shadow: inset 0 0 0 1000px rgba(28, 45, 24, 0.53); /* add dark overlay */
+}
+
+.navigation .background {
+    width: 20px;
+    height: auto;
 }
 
 .navigation .links {
@@ -77,7 +87,7 @@ header {
 }
 
 .navigation a {
-    color: var(--black);
+    color: var(--white);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -88,6 +98,10 @@ header {
     background-color: var(--lightgreen);
     font-weight: bold;
     /* color: var(--white); */
+}
+
+.main {
+    min-height: 100vh;
 }
 
 @media (min-width: 600px) {
