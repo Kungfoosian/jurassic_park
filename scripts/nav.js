@@ -7,7 +7,7 @@ function displayNav() {
     myLinks.style.display = "none";
   } else {
     myLinks.style.display = "block";
-    myLinks.style.position = "fixed";
+    myLinks.style.position = "absolute";
   }
 } 
 
