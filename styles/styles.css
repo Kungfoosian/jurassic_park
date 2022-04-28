@@ -1,5 +1,5 @@
 :root {
-    --white: #f9f9f9;
+    --white: #f5f3f3;
     --black: #36383f;
     --gray: #85888c;
     --lightgreen: #3cc47c;
@@ -13,106 +13,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* color: red; */
-    /* border: 1px solid black; */
 }
 
-a { text-decoration: none; }
+*:nth-child(2n) { border: 1px solid blue;}
+*:first-child { border: 1px solid red;}
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-
-    background-image: url('../assets/images/background.jpg');
-
-    box-shadow: inset 0 0 0 1000px rgba(161, 117, 31, 0.53);
-
-    min-height: 100vh;
+    background-color: var(--gray); /* change to black */
 }
 
-
-
-.header {
-    width: 100%;
-
-    margin-bottom: 20px;
-    
-    border-bottom: 3px solid var(--darkcreme);
-
-    position: sticky;
-    top: 0;
-}
-
-.navTop {
-    background-image: linear-gradient(to right, var(--creme), #d4932b);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.logo {
-    width: 25vw;
-    height: auto;
-
-    display: inline-block;
-    color: var(--white)
-}
-
-.navTop .icon { color: white; }
-
-.navigation {
-    overflow: hidden;
-}
-
-.navigation {
-    display: none;
-
-    text-align: center;
-    
-    background-image: url("../assets/images/nav-bg1.png");
-    
-    border-bottom: 3px solid var(--white);
-
-    box-shadow: inset 0 0 0 1000px rgba(28, 45, 24, 0.53); /* add dark overlay */
-}
-
-.navigation .background {
-    width: 20px;
-    height: auto;
-}
-
-.navigation .links {
-    margin: 0 20vw;
-}
-
-.navigation .links:not(:last-of-type){
-    border-bottom: 2px solid var(--white);
-}
-
-.navigation a {
-    color: var(--white);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.navigation .links:hover {
-    background-color: var(--lightgreen);
-    font-weight: bold;
-    /* color: var(--white); */
-}
-
-.main {
-    /* min-height: 100vh; */
-}
 
 @media (min-width: 600px) {
-    /* nav select {
-        display: none;
-    }
-
-    nav ul {
-        display: block;
-    } */
+    
 }
