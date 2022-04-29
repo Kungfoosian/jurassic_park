@@ -15,11 +15,51 @@
     padding: 0;
 }
 
-*:nth-child(2n) { border: 1px solid blue;}
-*:first-child { border: 1px solid red;}
+/* *:nth-child(even)/ { background-color:aqua;} */
+/* *:nth-child(odd){ background-color: #d4932b;} */
 
 body {
     background-color: var(--gray); /* change to black */
+    min-height: 100vh;
+}
+
+.header {
+    height: 100vh;
+
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+}
+
+.header .navTop {
+    height: 25%;
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .navTop .hamburger{
+    width:35px;
+    height: 35px;
+}
+
+.header .navTop .hamburger::first-letter {
+    color: yellow;
+}
+
+.header .dropdown-content {
+    height: 75%;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .dropdown-content .social-container img{
+    width: 48px;
+    height: auto;
 }
 
 
