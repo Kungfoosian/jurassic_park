@@ -60,19 +60,13 @@ body {
     width: var(--hamburger-width);
     height: var(--hamburger-height);
 
-
     position: relative;
-
-    /* border-radius: 10px; */
-
-    /* background-color: black; */
 }
 
 .header .navTop .nav-toggle .hamburger .lines:first-child {
     display: block;
 
     position: absolute;
-    /* top: -5px; */
 
     width: var(--hamburger-width);
     height: var(--hamburger-height);
@@ -82,7 +76,6 @@ body {
     background-color: white;
     border-radius: 10px;
 
-    /* transform: rotate(0deg); */
     transition-duration: 0.4s;
 }
 
@@ -90,7 +83,6 @@ body {
     display: block;
 
     position: absolute;
-    /* top: 5px; */
 
     width: var(--hamburger-width);
     height: var(--hamburger-height);
@@ -113,24 +105,6 @@ body {
 .bottom-cross {
     transform: rotate(-45deg);
     top: 0;
-}
-
-@keyframes top_normal {
-    /* 0% {
-        transform: rotate(0deg);
-        top: 0;
-    } */
-    100% { 
-        transform: rotate(0deg); 
-        top: -5px;
-    }
-}
-
-@keyframes bottom_normal {
-    100% { 
-        transform: rotate(45deg); 
-        top: 5px;
-    }
 }
 
 .header .dropdown-content {
