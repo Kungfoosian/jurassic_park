@@ -7,6 +7,8 @@
     --creme: #e9c893;
     --darkcreme: #d4932b;
     --tin: #828081;
+    --hamburger-height: 4px;
+    --hamburger-width: 35px;
 }
 
 * {
@@ -26,25 +28,71 @@ body {
 .header {
     height: 100vh;
 
-    background-image: url("../assets/images/background.jpg");
+    background-image: url("../assets/images/bg3.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .header .navTop {
     height: 25%;
+    
     padding: 8px;
+    padding-left: 3%;
+    padding-right: 10%;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header .navTop .hamburger{
-    width:35px;
-    height: 35px;
+.header .navTop .nav-toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.header .navTop .hamburger::first-letter {
-    color: yellow;
+.header .navTop .nav-toggle .hamburger::before {
+    display: block;
+
+    position: absolute;
+    top: -5px;
+
+    width: var(--hamburger-width);
+    height: var(--hamburger-height);
+
+    content: "";
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header .navTop .nav-toggle .hamburger{
+    display: block;
+
+    width: var(--hamburger-width);
+    height: var(--hamburger-height);
+
+
+    position: relative;
+
+    /* border-radius: 10px; */
+
+    /* background-color: black; */
+}
+
+.header .navTop .nav-toggle .hamburger::after {
+    display: block;
+
+    position: absolute;
+    top: 5px;
+
+    width: var(--hamburger-width);
+    height: var(--hamburger-height);
+
+    content: "";
+
+    background-color: white;
+    border-radius: 10px;
 }
 
 .header .dropdown-content {
