@@ -12,5 +12,7 @@ function displayNav() {
 }
 
 // Animation for hamburger
-
+const hamburgerTop = document.getElementById('hamburger');
+console.log(hamburgerTop);
+// hamburgerTop.style.transform = 'rotate(7deg)';
 
