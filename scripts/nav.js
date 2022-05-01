@@ -9,5 +9,8 @@ function displayNav() {
     myLinks.style.display = "block";
     // myLinks.style.position = "absolute";
   }
-} 
+}
+
+// Animation for hamburger
+
 
