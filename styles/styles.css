@@ -46,6 +46,9 @@ body {
 }
 
 .header .navTop .nav-toggle {
+    width: 35px;
+    height: 35px;
+
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -69,7 +72,7 @@ body {
     display: block;
 
     position: absolute;
-    top: -5px;
+    /* top: -5px; */
 
     width: var(--hamburger-width);
     height: var(--hamburger-height);
@@ -78,13 +81,16 @@ body {
 
     background-color: white;
     border-radius: 10px;
+
+    /* transform: rotate(0deg); */
+    transition-duration: 0.4s;
 }
 
 .header .navTop .nav-toggle .hamburger .lines:last-child{
     display: block;
 
     position: absolute;
-    top: 5px;
+    /* top: 5px; */
 
     width: var(--hamburger-width);
     height: var(--hamburger-height);
@@ -93,19 +99,37 @@ body {
 
     background-color: white;
     border-radius: 10px;
+
+    transition-duration: 0.4s;
 }
 
-@keyframes top_to_x {
-    100% { 
-        transform: rotate(45deg); 
+.top-normal { top: -5px; }
+.top-cross {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.bottom-normal { top: 5px; }
+.bottom-cross {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+@keyframes top_normal {
+    /* 0% {
+        transform: rotate(0deg);
         top: 0;
+    } */
+    100% { 
+        transform: rotate(0deg); 
+        top: -5px;
     }
 }
 
-@keyframes bottom_to_x {
+@keyframes bottom_normal {
     100% { 
-        transform: rotate(-45deg);
-        top: 0;
+        transform: rotate(45deg); 
+        top: 5px;
     }
 }
 

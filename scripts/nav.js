@@ -12,7 +12,16 @@ function displayNav() {
 }
 
 // Animation for hamburger
-const hamburgerTop = document.getElementById('hamburger');
-console.log(hamburgerTop);
-// hamburgerTop.style.transform = 'rotate(7deg)';
+const hamburgerNav = document.getElementById('nav-toggle');
+const hamburgerTop = document.getElementById('burger-top');
+const hamburgerBottom = document.getElementById('burger-bottom');
+
+hamburgerNav.addEventListener('click', e => {
+
+  hamburgerTop.classList.toggle('top-normal');  
+  hamburgerTop.classList.toggle('top-cross');  
+  
+  hamburgerBottom.classList.toggle('bottom-normal');  
+  hamburgerBottom.classList.toggle('bottom-cross');  
+})
 
