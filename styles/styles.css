@@ -164,6 +164,11 @@ body {
     opacity: 0;
 }
 
+.main .tab {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media (min-width: 600px) {
     
 }
