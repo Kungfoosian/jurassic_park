@@ -164,9 +164,8 @@ body {
     opacity: 0;
 }
 
-.main .tab {
-    display: flex;
-    justify-content: space-evenly;
+.main {
+    padding: 0 8vw;
 }
 
 @media (min-width: 600px) {
