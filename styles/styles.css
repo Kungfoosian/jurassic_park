@@ -167,10 +167,10 @@ body {
 
 
 .main #animals {
-    /* background-image: url("../assets/images/BeautyRenderBGgreen.jpg"); */
-    /* background-size: cover; */
+    background-size: cover;
     padding: 20px 8vw;
-    background-image: linear-gradient(#3E7834 99%, #e37c22 );
+    background-image:url("../assets/images/BeautyRenderBGgreen.jpg"), linear-gradient(#3E7834, #e37c22 );
+    background-size: cover  ;
 }
 
 .main #animals #description p {
@@ -190,12 +190,23 @@ body {
 }
 
 .main #connect {
-    padding: 8px 8vw;
-    background-color: #E37C22;
+    padding: 20px 8vw;
+    background-image: url("../assets/images/BeautyRenderBG.jpg");
+
+    color: white;
+}
+
+.main #connect img {
+    width: 100%;
+    height: auto;
+    
+    transform: scaleX(-1);
 }
 
 .main #about {
     padding: 8px 8vw;
+    background-image: url("../assets/images/BeautyRenderBGgreen.jpg");
+    
 }
 
 .main #about h2{
