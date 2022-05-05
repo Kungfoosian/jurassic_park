@@ -21,9 +21,7 @@
 
 body {
     background-color: #6ec028; /* change to black */
-    background-image: url("../assets/images/BeautyRenderBGgreen.jpg");
-    background-size: cover;
-    
+        
     min-height: 100vh;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -167,12 +165,12 @@ body {
     opacity: 0;
 }
 
-.main {
-    padding: 0 8vw;
-}
 
 .main #animals {
-    padding: 8px 0;
+    /* background-image: url("../assets/images/BeautyRenderBGgreen.jpg"); */
+    /* background-size: cover; */
+    padding: 20px 8vw;
+    background-image: linear-gradient(#3E7834 99%, #e37c22 );
 }
 
 .main #animals #description p {
@@ -189,6 +187,19 @@ body {
 .main #animals #showcase img {
     width: 100%;
     height: auto;
+}
+
+.main #connect {
+    padding: 8px 8vw;
+    background-color: #E37C22;
+}
+
+.main #about {
+    padding: 8px 8vw;
+}
+
+.main #about h2{
+    padding: 8px 0;
 }
 
 @media (min-width: 600px) {
