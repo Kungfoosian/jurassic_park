@@ -194,6 +194,11 @@ body {
     background-image: url("../assets/images/BeautyRenderBG.jpg");
 
     color: white;
+
+    /* height: 75vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .main #connect div {
@@ -202,14 +207,38 @@ body {
 
 .main #connect form {
     padding: 20px 0;
+
+    /* height: 12%; */
+
+    display: flex;
+}
+
+.main #connect form input {
+    margin: 0;
+    font-size: 14px;
+    padding: 4px;
+    border: none;
+    height: 100%;
+}
+
+.main #connect form button {
+    border: none;
+    padding: 4px 10px;
+    font-size: 14px;
+    height: 100%;
+
+    background-color: #3e7733;
+    font-weight: bold;
+    color: white;
 }
 
 .main #connect img {
-    width: 100%;
+    width: min(100%, 750px);
     height: auto;
     
     transform: scaleX(-1);
 }
+
 
 .main #about {
     padding: 8px 8vw;
@@ -219,6 +248,28 @@ body {
 
 .main #about h2{
     padding: 8px 0;
+}
+
+.main #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main #about a {
+    text-decoration: none;
+    color: white;
+}
+
+.main #about #resume-link {
+    font-weight: bold;
+    font-size: 14px;
+
+    padding: 20px 0;
+}
+
+.main #about #resume-link:hover {
+    background-color: #6C3377;
 }
 
 @media (min-width: 600px) {
