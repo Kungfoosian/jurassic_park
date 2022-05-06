@@ -196,6 +196,14 @@ body {
     color: white;
 }
 
+.main #connect div {
+    line-height: 1.5;
+}
+
+.main #connect form {
+    padding: 20px 0;
+}
+
 .main #connect img {
     width: 100%;
     height: auto;
