@@ -85,6 +85,28 @@
         </div>
     </div>
 
+    <form action="#" class="payment-form">
+        <label for="name">Your Name<abbr title="required">*</abbr>
+            <input type="text" required>
+        </label>
+
+        <label for="email">Your Email<abbr title="required">*</abbr>
+            <input type="email" required>
+        </label>
+
+        <label for="phone">Your Phone<abbr title="required">*</abbr>
+            <input type="number" required>
+        </label>
+
+        <label for="adult-amount">Adults<abbr title="required">*</abbr>
+            <input type="number" required min="1" placeholder="1">
+        </label>
+
+        <label for="child-amount">Children
+            <input type="number" min="0" placeholder="0">
+        </label>
+    </form>
+
     <script src="scripts/nav.js"></script>
 </body>
 </html>
