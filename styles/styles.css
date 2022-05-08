@@ -289,6 +289,63 @@ body {
     padding: 10vw;
 }
 
+.payment-form label {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.payment-form label span {
+    width: 25%;
+
+    display: inline-block;
+    
+    text-align: end;
+}
+
+.payment-form label input {
+    width: 50%;
+}
+
+.payment-form .guest-count-container,
+.payment-form .duration-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.payment-form .guest-count-container span,
+.payment-form .duration-container span {
+    width: 25%;
+    text-align: end;
+}
+
+.payment-form .guest-count-container div,
+.payment-form .duration-container div {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-form .guest-count-container div label,
+.payment-form .duration-container div label {
+    display: flex;
+    justify-content: space-between;
+
+    width: 45%;
+}
+
+.payment-form .guest-count-container div label input,
+.payment-form .duration-container div label input {
+    text-align: center;
+}
+
+
+
+
 @media (min-width: 600px) {
     
 }

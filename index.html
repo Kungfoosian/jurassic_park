@@ -101,25 +101,37 @@
             <input type="number" required>
         </label>
 
-        <label for="adult-amount">
-            <span>Adults<abbr title="required">*</abbr></span>
-            <input type="number" required min="1" placeholder="1">
-        </label>
+        <div class="guest-count-container">
+            <span>Tickets<abbr title="required">*</abbr></span>
 
-        <label for="child-amount">
-            <span>Children</span>
-            <input type="number" min="0" placeholder="0">
-        </label>
+            <div>
+                <label for="adult-amount">
+                    <span>Adults<abbr title="required">*</abbr></span>
+                    <input type="number" required min="1" max="15" placeholder="1">
+                </label>
+        
+                <label for="child-amount">
+                    <span>Children</span>
+                    <input type="number" min="0" max="15" placeholder="0">
+                </label>
+            </div>
+        </div>
 
-        <label for="stay-from">
-            <span>Stay from</span>
-            <input type="date" name="stay-from" id="stay-from">
-        </label>
+        <div class="duration-container">
+            <span>Stay<abbr title="required">*</abbr></span>
 
-        <label for="stay-to">
-            <span>Stay to</span>
-            <input type="date" name="stay-to" id="stay-to">
-        </label>
+            <div>
+                <label for="from">
+                    <span>From</span>
+                    <input type="date" name="from" id="from" required>
+                </label>
+        
+                <label for="to">
+                    <span>To</span>
+                    <input type="date" name="to" id="to" required>
+                </label>
+            </div>
+        </div>
 
         <button>Book Visit</button>
     </form>
