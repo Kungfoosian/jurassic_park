@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/bookTicket.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
                 <img src="assets/icons8-youtube-48.png" alt="Youtube">
             </div>
 
-            <a class="links" href="ticket.html">Get Tickets</a>
+            <a class="links" id="ticket-link">Get Tickets</a>
         </div>
     </div>
     
@@ -85,7 +87,14 @@
         </div>
     </div>
 
-    <form action="#" class="payment-form">
+    <form action="#" class="payment-form hidden" id="payment-form">
+        <div id="form-close">
+            <span>
+                <span id="close-left"></span>
+                <span id="close-right"></span>
+            </span>
+        </div>
+
         <label for="name">
             <span>Your Name<abbr title="required">*</abbr></span>
             <input type="text" required>
@@ -133,9 +142,9 @@
             </div>
         </div>
 
-        <button>Book Visit</button>
+        <button id="book-visit">Book Visit</button>
     </form>
 
-    <script src="scripts/nav.js"></script>
+    
 </body>
 </html>

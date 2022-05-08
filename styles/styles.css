@@ -27,6 +27,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a { cursor: pointer; }
+
 .header {
     height: 100vh;
 
@@ -343,7 +345,39 @@ body {
     text-align: center;
 }
 
+.payment-form #form-close > span {
+    width: 35px;
+    height: 35px;
+    display: block;
+    /* background-color: w?hite; */
+    position: relative;
+    cursor: pointer;
+}
 
+.payment-form #form-close #close-left{
+    background-color: black;
+    width: 35px;
+    height: 4px;
+    display: block; 
+    position: absolute;
+    bottom: 17.5px;
+    transform: rotate(45deg);
+}
+
+.payment-form #form-close #close-right{
+    background-color: black;
+    width: 35px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 17.5px;
+    transform: rotate(-45deg);
+}
+
+
+.payment-form #book-visit {
+    padding: 20px;
+}
 
 
 @media (min-width: 600px) {
